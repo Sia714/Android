@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30sp"
+    android:layout_marginStart="15dp"
+    android:gravity="center"
+    android:background="@color/white"
+
+    tools:context=".Buy">
+
+
+    <TextView
+        android:id="@+id/bouquetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60sp"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="1">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_margin="10sp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:contentDescription="@string/flow"
+                android:foreground="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_row="0"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:foreground="@drawable/fade_right"
+                android:layout_column="1"/>
+        </GridLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:inputType="text"
+        android:autofillHints="your"
+        android:textColor="@color/black"
+        android:hint="@string/name"/>
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:inputType="phone"
+        android:autofillHints="phone"
+        android:textColor="@color/black"
+        android:hint="@string/Add"/>
+    <EditText
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:inputType="text"
+        android:layout_marginBottom="10sp"
+        android:textColor="@color/black"
+        android:autofillHints="postalAddress"
+        android:hint="@string/Address"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:textSize="18sp"
+        android:text="@string/language"/>
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:autofillHints="message"
+        android:hint="@string/msg"/>
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:backgroundTint="#E49595"
+        android:text="@string/Confirm"
+        android:textSize="18sp"
+        android:layout_marginTop="26dp"/>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="#E49595"
+        android:text="@string/Explore_other_Options"
+        android:textSize="17sp"
+        android:foreground="?attr/selectableItemBackground" />
+</LinearLayout>
+</ScrollView>

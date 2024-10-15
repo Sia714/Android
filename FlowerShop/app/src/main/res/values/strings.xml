@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FlowerShop</string>
+    <string name="Rose_Bouquet">Rose Bouquet</string>
+    <string name="Roses">Roses</string>
+    <string name="Lilies">Lilies</string>
+    <string name="Price299">Price: $2.99</string>
+    <string name="Buy_Now">Buy Now</string>
+    <string name="Explore_other">Explore Other Bouquets</string>
+    <string name="Address">Enter Your Address</string>
+    <string name="Add">Enter Your Contact Number</string>
+    <string name="name">Enter Your Name</string>
+    <string name="Confirm">Confirm Your Order</string>
+    <string name="Explore_other_Options">Explore Other Options</string>
+    <string name="msg">Send a message</string>
+    <string name="language">Want to Convey a special meaning?\nEnter your \'Language of Flowers\' below:</string>
+    <string name="bouq">Buy a Bouquet!</string>
+    <string name="flower_image">flower image goes here</string>
+    <string name="flow">Flower Bouquet</string>
+</resources>

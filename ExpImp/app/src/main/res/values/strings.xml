@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ExpImp</string>
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="explicit_intent">Explicit Intent</string>
+    <string name="cam">Camera</string>
+    <string name="gal">Gallary</string>
+    <string name="Con">Contacts</string>
+    <string name="url">URL</string>
+    <string name="Call">Call</string>
+    <string name="air">Aeroplane Mode</string>
+</resources>

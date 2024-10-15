@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CA1</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="myntra">Myntra</string>
+    <string name="one_stop_shopping_destination">One stop shopping destination</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Flipkart</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="YEAAHH">YEAH</string>
+    <string name="YEHH">yeahh</string>
+    <string name="Dresses">Dresses</string>
+</resources>
