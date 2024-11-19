@@ -2,6 +2,7 @@ package com.example.school
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -15,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        var inte=findViewById<Button>(R.id.loc)
+        inte.setOnClickListener(){
+            val intent=Intent(this,Localised::class.java)
+            startActivity(intent)
+        }
         var i=findViewById<ImageButton>(R.id.CA)
         i.setOnClickListener(){view->
             Snackbar.make(view,"Go to School of Computer Applications?",Snackbar.LENGTH_LONG).setAction("Yes"){
@@ -29,6 +35,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }.show()
         }
+
         i=findViewById<ImageButton>(R.id.Bio)
         i.setOnClickListener(){view->
             Snackbar.make(view,"Go to School of Bio Engineering and BioSciences?",Snackbar.LENGTH_LONG).setAction("Yes"){
@@ -43,20 +50,20 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }.show()
         }
-        i=findViewById<ImageButton>(R.id.CSE)
-        i.setOnClickListener(){view->
-            Snackbar.make(view,"Go to School of Computer Science Engineering?",Snackbar.LENGTH_LONG).setAction("Yes"){
-                Toast.makeText(this,"Going to the school", Toast.LENGTH_LONG).show()
-                val intent= Intent(this,School::class.java)
-                intent.putExtra("LOGO",R.drawable.cse)
-                intent.putExtra("pro","Program your future today… script the world of tomorrow! Computer Science and Engineering/IT/Computing Discipline encourages all-around development through industry adapted curriculum focusing on enhancing both technical skills and soft skills.")
-                intent.putExtra("hp","₹64 Lac")
-                intent.putExtra("ap","₹14.97 Lac")
-                intent.putExtra("tr","900+")
-                intent.putExtra("sd","2350+")
-                startActivity(intent)
-            }.show()
-        }
+//        i=findViewById<ImageButton>(R.id.CSE)
+//        i.setOnClickListener(){view->
+//            Snackbar.make(view,"Go to School of Computer Science Engineering?",Snackbar.LENGTH_LONG).setAction("Yes"){
+//                Toast.makeText(this,"Going to the school", Toast.LENGTH_LONG).show()
+//                val intent= Intent(this,School::class.java)
+//                intent.putExtra("LOGO",R.drawable.cse)
+//                intent.putExtra("pro","Program your future today… script the world of tomorrow! Computer Science and Engineering/IT/Computing Discipline encourages all-around development through industry adapted curriculum focusing on enhancing both technical skills and soft skills.")
+//                intent.putExtra("hp","₹64 Lac")
+//                intent.putExtra("ap","₹14.97 Lac")
+//                intent.putExtra("tr","900+")
+//                intent.putExtra("sd","2350+")
+//                startActivity(intent)
+//            }.show()
+//        }
         i=findViewById<ImageButton>(R.id.ECE)
         i.setOnClickListener(){view->
             Snackbar.make(view,"Go to School of Electronics & Electrical Engineering?",Snackbar.LENGTH_LONG).setAction("Yes"){

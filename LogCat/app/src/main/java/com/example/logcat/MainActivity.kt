@@ -1,6 +1,9 @@
 package com.example.logcat
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        var btnlog= findViewById<Button>(R.id.btnlog)
+        btnlog.setOnClickListener {
+            Log.v(TAG,"Verbose log: lowest priority,detailed entry, no use during production")
+            Log.d(TAG,"Debug log: highest priority , This is used to debug the app")
+            Log.i(TAG,"Info log: moderate level priority,they give information of content")
+            Log.w(TAG,"Warning log: This is a warning message for unexpected behaviour")
         }
     }
 }

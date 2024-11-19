@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode -->
+    <style name="Base.Theme.ActPortfolio" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#6A5353</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/textColor</item>
+        <!-- Additional customization can go here -->
+    </style>
+
+    <style name="Theme.ActPortfolio" parent="Base.Theme.ActPortfolio" />
+</resources>
